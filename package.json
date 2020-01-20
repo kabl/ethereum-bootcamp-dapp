@@ -1,0 +1,45 @@
+{
+  "name": "ethereum-bootcamp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "build": "truffle compile",
+    "lint": "solhint \"contracts/*.sol\"",
+    "prettier": "prettier --write **/*.sol",
+    "coverage": "solidity-coverage",
+    "ganache": "ganache-cli -m \"pilot regular prize ridge spy reduce boil trick cigar maple million wall\"",
+    "graph": "surya inheritance ./contracts/*.sol | dot -Tpng > graph.png"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kabl/ethereum-bootcamp.git"
+  },
+  "author": "kabl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kabl/ethereum-bootcamp/issues"
+  },
+  "homepage": "https://github.com/kabl/ethereum-bootcamp#readme",
+  "devDependencies": {
+    "ganache-cli": "^6.7.0",
+    "prettier": "^1.19.1",
+    "prettier-plugin-solidity": "^1.0.0-alpha.34",
+    "solhint": "^2.3.0",
+    "solhint-plugin-prettier": "0.0.3",
+    "solidity-coverage": "^0.6.7",
+    "truffle": "^5.1.6",
+    "truffle-assertions": "^0.9.2",
+    "truffle-flattener": "^1.4.2",
+    "truffle-security": "^1.6.1"
+  },
+  "dependencies": {
+    "eth-gas-reporter": "^0.2.14",
+    "openzeppelin-solidity": "^2.4.0",
+    "truffle-hdwallet-provider": "^1.0.17"
+  }
+}
