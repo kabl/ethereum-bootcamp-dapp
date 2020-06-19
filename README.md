@@ -10,3 +10,14 @@ Run `npm install` in the project you want to build.
 
 Please see the `README.md` in the specific project folder.
 
+## Deployment Rinkeby
+
+```bash
+# Deploy the contract to the Rinnkeby network
+truffle compile --all
+truffle migrate --reset --network rinkeby
+```
+
+*Deployments*
+Address: 0x20C9C7E1b96b8D99A41322bFa0c9D9D7Ee507EC6
+Etherscan: https://rinkeby.etherscan.io/address/0x20C9C7E1b96b8D99A41322bFa0c9D9D7Ee507EC6

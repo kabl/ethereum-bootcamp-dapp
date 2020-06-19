@@ -11,7 +11,7 @@ contract("MessageBoardTest", accounts => {
     var instance = await MessageBoard.new();
 
     const amount = "1000000000000000000";
-    await instance.setMessage("Hello World"); // 18 decimals..
+    await instance.setMessage("Hello World");
 
     var msg = (await instance.getMessage()).toString();
 
