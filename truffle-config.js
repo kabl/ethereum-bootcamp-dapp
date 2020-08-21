@@ -7,6 +7,9 @@ var gasLimit = 5000000;
 
 module.exports = {
 
+  plugins: ["truffle-security"],
+
+
   networks: {
     development: {
       host: "localhost",

@@ -21,3 +21,15 @@ truffle migrate --reset --network rinkeby
 *Deployments*
 Address: 0x20C9C7E1b96b8D99A41322bFa0c9D9D7Ee507EC6
 Etherscan: https://rinkeby.etherscan.io/address/0x20C9C7E1b96b8D99A41322bFa0c9D9D7Ee507EC6
+
+## Update Repo
+
+Update the dependencies in package.json
+
+```bash
+# Update all versions in package.json
+ncu -u
+## Hint: openzeppelin-solidity version should not change
+
+npm update
+```
