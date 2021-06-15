@@ -25,12 +25,19 @@ writeData = function () {
     //     var erc20 = await blockchain.getERC20Instance(erc20address);
     // await contractInstance.methods.setMessage(message).send();
 
-    contractInstance.methods.setMessage(message).send().then(function (receipt) {
-        console.log(receipt);
-    });
+
+    var result = contractInstance.methods.setMessage(message).send().on(
+        "transactionHash", function (txHash) {
+            console.log("TX Sent. TX Hash:", txHash);
+        }
+    ).on(
+        "receipt", function (receipt) {
+            console.log("TX Mined. Receipt:", receipt);
+        }
+    )
 }
 
-readData = async function() {
+readData = async function () {
     console.log("Read data");
     var message = await contractInstance.methods.getMessage().call();
     document.getElementById('message').value = message;

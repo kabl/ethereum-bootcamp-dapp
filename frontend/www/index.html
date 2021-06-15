@@ -21,6 +21,7 @@
     <div class="jumbotron text-center">
         <h1>DApp Demo</h1>
         <p>MessageBoard Frontend</p>
+        <p>The preset values are valid for the Rinkeby network</p>
     </div>
 
     <!-- init the smart contract -->
@@ -29,8 +30,8 @@
             <form>
                 <div class="form-group">
                     <label for="contractAddress">Contract Address:</label>
-                    <!-- Rinkeby: 0xd21b49D91D761c2AAb403b7ae23Bbe3F91941c6E -->
-                    <input type="text" class="form-control" id="contractAddress" placeholder="0x...">
+                    <!-- Rinkeby: 0x20C9C7E1b96b8D99A41322bFa0c9D9D7Ee507EC6 -->
+                    <input type="text" class="form-control" id="contractAddress" value="0x20C9C7E1b96b8D99A41322bFa0c9D9D7Ee507EC6">
                 </div>
                 <button type="button" onclick=init() class="btn btn-danger">Init</button>
             </form>
