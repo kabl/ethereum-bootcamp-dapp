@@ -1,7 +1,7 @@
 // Required for Rinkeby deployment
 var HDWalletProvider = require("truffle-hdwallet-provider");
 var privateKey = "<PRIVATE-KEY>";
-var rinkebyEndpoint = "https://rinkeby.infura.io/v3/0cd25f13fa42452181039a22154c025a";
+var rinkebyEndpoint = "https://rinkeby.infura.io/v3/<SECRET>";
 
 var gasLimit = 5000000;
 
@@ -25,7 +25,6 @@ module.exports = {
     }
   },
   solc: {
-    version: "0.5.12",
     optimizer: {
       enabled: true,
       runs: 200
@@ -36,7 +35,7 @@ module.exports = {
   },
   compilers: {
     solc: {
-      version: "0.5.12",
+      version: "0.8.11",
     },
   },
 };

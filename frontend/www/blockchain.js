@@ -39,8 +39,12 @@ writeData = function () {
 
 readData = async function () {
     console.log("Read data");
-    var message = await contractInstance.methods.getMessage().call();
+    var message = await contractInstance.methods.getMessage().call({gas: 30000});
     document.getElementById('message').value = message;
+    //{gas: 1, gasPrice: 1}
+    //10'000'000'000'000'000'000
+    //2996534402838941686 want 
+    //10000000000000000000
 }
 
 clearText = function () {

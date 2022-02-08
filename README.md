@@ -13,7 +13,7 @@ Please see the `README.md` in the specific project folder.
 ## Deployment Rinkeby
 
 ```bash
-# Deploy the contract to the Rinnkeby network
+# Deploy the contract to the Rinkeby network
 truffle compile --all
 truffle migrate --reset --network rinkeby
 ```
